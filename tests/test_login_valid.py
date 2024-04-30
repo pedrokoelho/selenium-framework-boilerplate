@@ -12,11 +12,11 @@ Test case 1: Positive LogIn test
 import pytest
 from pages.login_page import LoginPage
 
-class TestLoginPositive:
+class TestLoginValid:
 
     @pytest.mark.login
-    @pytest.mark.positive
-    def test_login_positive(self, driver):
+    @pytest.mark.valid
+    def test_login_valid(self, driver):
 
         # instantiating the class page
         login_page = LoginPage(driver)
