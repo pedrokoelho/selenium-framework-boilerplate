@@ -1,5 +1,7 @@
 """
-Test case 1: Positive LogIn test
+LOGIN VALID TEST
+
+Test case 001: Positive LogIn test
 
 1. Open page
 2. Type username student into Username field
@@ -17,7 +19,7 @@ class TestLoginValid:
 
     @pytest.mark.login
     @pytest.mark.valid
-    def test_login_valid(self, driver):
+    def test_001_login_valid(self, driver):
 
         # instantiating the class pages
         login_page = LoginPage(driver)

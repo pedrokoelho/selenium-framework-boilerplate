@@ -33,6 +33,14 @@ class LoginPage(BasePage):
         # 3. click button
         super()._click(self.__btn_sumbit)
 
+    # method to verify if error msg is displayed
+    def is_red_banner_displayed(self) -> bool:
+        return super()._is_displayed(self.__banner_error)
+
+    # method to get the error msg text
+    def get_error_msg_text(self) -> str:
+        return super()._get_text(self.__banner_error)
+
 
 
 
