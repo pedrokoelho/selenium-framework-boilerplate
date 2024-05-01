@@ -28,11 +28,12 @@
         > login_page
         > logged_in_page
 
-###### init file to tests folder and the first basic test -> valid login
+###### init file to tests folder and 3 basic login tests -> valid and invalid login
 
     > tests
         > __init__.py # creating this init file so we don't get an error executing the tests
-        > test_login_valid
+        > test_login_valid 
+        > test_login_invalid
 
 ###### pytest.ini to register the pytest markers
 
