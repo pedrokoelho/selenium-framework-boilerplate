@@ -48,3 +48,15 @@
 `pytest -s -m valid` or `pytest -s -m login` # execute tests with markers
 
 `pytest -s` # execute all tests
+
+## Create new branch -> checkout the branch and create a new one
+
+`git checkout -b dev`
+
+## Checkout the branch and go to main
+
+`git checkout main`
+
+## View all branches
+
+`git branch`
