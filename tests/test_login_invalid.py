@@ -7,7 +7,6 @@ Test case 003: Negative password test
 
 import pytest
 from pages.login_page import LoginPage
-from pages.logged_in_page import LoggedInPage
 
 class TestLoginInvalid:
 
@@ -17,7 +16,6 @@ class TestLoginInvalid:
 
         # instantiating the class pages
         login_page = LoginPage(driver)
-        logged_in_page = LoggedInPage(driver)
 
         # 1. Open page
         login_page.open()
@@ -30,14 +28,12 @@ class TestLoginInvalid:
         # 6. Verify error message text is Your username is invalid!
         assert login_page.get_error_msg_text() == 'Your username is invalid!', 'Captured error msg text does not match expected text!'
 
-    @pytest.mark.debug
     @pytest.mark.login
     @pytest.mark.invalid
     def test_003_login_invalid_password(self, driver):
 
         # instantiating the class pages
         login_page = LoginPage(driver)
-        logged_in_page = LoggedInPage(driver)
 
         # 1. Open page
         login_page.open()
